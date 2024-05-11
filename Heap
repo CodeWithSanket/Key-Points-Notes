@@ -1,0 +1,24 @@
+Priority Queue Ordering 
+
+
+Priority Queue ordering for any integers,characters or pair of integers is based on ordering of first element or ordering of second element.
+
+----Priority Queue ordered by first element(Max)
+
+In C++ if we have a pair in priority queue, then priority is based on first element of pair         -> priority_queue<pair<int,int>>maxHeap;
+Note: If the first element of some pairs will be same, then the comparison will be made on the basis of the second element.
+
+-----Priority Queue ordered by first Element(Min)
+
+In C++ if we have a pair in priority queue, then priority is based on second element of pair        -> priority_queue<pair<int,int>,greater<int>>minHeap;
+Note: If the first element of some pairs will be same, then the comparison will be made on the basis of the second element.
+
+
+-----Priority Queue ordered by Second Element (Max)
+
+In C++, use Custom Comparator class to define the ordering of second Element. 
+
+
+---- Priority Queue ordered by Secon Element (Min)
+In C++, use Custom Comparator class to define the ordering of second Element. 
+
