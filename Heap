@@ -17,8 +17,24 @@ Note: If the first element of some pairs will be same, then the comparison will 
 -----Priority Queue ordered by Second Element (Max)
 
 In C++, use Custom Comparator class to define the ordering of second Element. 
+priority_queue<Node*,vector<Node*>,compare>maxHeap; 
+class compare{
+    public:
+        bool operator()(Node* a, Node* b) {
+            return a->count < b->count;
+        }
+};
+
 
 
 ---- Priority Queue ordered by Secon Element (Min)
 In C++, use Custom Comparator class to define the ordering of second Element. 
+priority_queue<Node*,vector<Node*>,compare>maxHeap;     
+
+class compare{
+    public:
+        bool operator()(Node* a, Node* b) {
+            return a->count > b->count;
+        }
+};
 
